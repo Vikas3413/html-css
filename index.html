@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grip Fitness Club</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body {
+            background-image: url('pexels-anush-gorak-1229356.jpg');
+            color: white;
+            padding: 0px;
+            margin: 0px;
+            background-size: 2500px;
+            background-repeat: no-repeat;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 0px;
+            top: -63px;
+        }
+
+        img {
+            width: 230px;
+            filter: invert(100%);
+            position: relative;
+
+        }
+
+        .left h1 {
+            font-family: 'Foldit', cursive;
+            margin-top: -28%;
+            margin-left: 170px;
+        }
+
+        .mid {
+            border: 2px solid rgb(12, 12, 14);
+            display: block;
+            width: 35%;
+            margin: 39px auto;
+            top: 20px;
+        }
+
+
+        .right {
+            position: absolute;
+            right: 70px;
+            top: 50px;
+            display: inline-block;
+            /* border: 2px solid rgb(95, 95, 85); */
+            border-radius: 8px;
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+            position: sticky;
+            font-family: 'Baloo Bhai', cursive;
+            /* border: 2px solid rgb(207, 44, 44); */
+
+            border-radius: 10px;
+        }
+
+        li a {
+            margin: 8px 18px;
+            color: white;
+            text-decoration: none;
+
+        }
+
+        li a:hover {
+            color: red;
+            font-family: 'Foldit', cursive;
+            text-decoration: underline;
+
+        }
+
+        .btn {
+            font-family: 'Baloo Bhai', cursive;
+            color: white;
+            margin: 0px 6px;
+            padding: 4px 24px;
+            background-color: rgb(31, 27, 27);
+            border-radius: 10px;
+            font-size: 23px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(231, 236, 227);
+            color: red;
+         border: 2px solid rgb(19, 18, 18); 
+        }
+        .container {
+        border: 2px solid white;
+        margin: 50px 30px;
+        padding: 70px;
+        width: 33%;
+        border-radius: 28px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .form-group input {
+       font-family: 'Foldit', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+#Submit{
+    display: block;
+    width: 50%;
+    margin: 6px auto;
+}
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="pngwing.com (2).png" alt="logo">
+            <h1>Grip Fitness Club</h1>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call us Now</button>
+            <button class="btn">Email us</button>
+        </div>
+        
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Pune now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button  id ="Submit" class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
